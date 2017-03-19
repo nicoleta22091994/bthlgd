@@ -44,7 +44,7 @@ ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF S
 DAMAGE.
 " />
 <link id="faviconLink" rel="shortcut icon" href="favicon.ico">
-<title>KaTeX Demo — a demo of the KaTeX plugin for TiddlyWiki5</title>
+<title>My TiddlyWiki — a non-linear personal web notebook</title>
 <!--~~ This is a Tiddlywiki file. The points of interest in the file are marked with this pattern ~~--><!--~~ Raw markup ~~-->
 
 </head>
@@ -121,15 +121,19 @@ Error message and password prompt
 
 <li>$:/core</li>
 
-<li>$:/DefaultTiddlers</li>
+<li>$:/Import</li>
 
 <li>$:/isEncrypted</li>
 
 <li>$:/plugins/tiddlywiki/katex</li>
 
-<li>$:/SiteSubtitle</li>
+<li>$:/state/Link/-1871024384/search</li>
 
-<li>$:/SiteTitle</li>
+<li>$:/state/showeditpreview</li>
+
+<li>$:/state/sidebar</li>
+
+<li>$:/state/tab/sidebar--1835078512</li>
 
 <li>$:/StoryList</li>
 
@@ -139,11 +143,43 @@ Error message and password prompt
 
 <li>$:/themes/tiddlywiki/vanilla</li>
 
-<li>HelloThere</li>
+<li>12 cặp đôi nam nữ quen nhau</li>
 
-<li>ImplementationNotes</li>
+<li>2 hoặc 21 clique</li>
 
-<li>KaTeX</li>
+<li>2017 chữ số 0 liên tiếp</li>
+
+<li>a(n) = 2a(n-1)</li>
+
+<li>Anti-chain in multiset</li>
+
+<li>Bất biến</li>
+
+<li>Các ô đôi một không cùng hàng, cùng cột</li>
+
+<li>chia nhóm</li>
+
+<li>Đếm số dãy</li>
+
+<li>Ghép thí sinh và giám khảo</li>
+
+<li>Hàm trên các dãy nhị phân</li>
+
+<li>Largest representation</li>
+
+<li>m+1 số chia hết cho nhau</li>
+
+<li>Problem on different subset sums</li>
+
+<li>Số cặp có tổng không âm</li>
+
+<li>Số gần hoàn hảo</li>
+
+<li>Số ít nhất các quả cầu bằng nhau</li>
+
+<li>Trò chơi trên tập các tập con</li>
+
+<li>Ván bài lật ngửa</li>
 
 </ul>
 </p>
@@ -7803,11 +7839,10 @@ Error message and password prompt
     }
 }</pre>
 </div>
-<div title="$:/DefaultTiddlers">
-<pre>HelloThere
-KaTeX
-ImplementationNotes
-</pre>
+<div status="complete" title="$:/Import">
+<pre>The following tiddlers were imported:
+
+# [[$:/plugins/tiddlywiki/katex]]</pre>
 </div>
 <div title="$:/isEncrypted">
 <pre>no</pre>
@@ -7954,13 +7989,19 @@ ImplementationNotes
     }
 }</pre>
 </div>
-<div title="$:/SiteSubtitle">
-<pre>a demo of the KaTeX plugin for TiddlyWiki5</pre>
+<div created="20170218112258479" modified="20170218112334157" title="$:/state/Link/-1871024384/search">
+<pre></pre>
 </div>
-<div title="$:/SiteTitle">
-<pre>KaTeX Demo</pre>
+<div created="20170217141351396" modified="20170217141351396" title="$:/state/showeditpreview">
+<pre>yes</pre>
 </div>
-<div list="HelloThere KaTeX ImplementationNotes" title="$:/StoryList">
+<div created="20170105133209130" modified="20170218235044496" title="$:/state/sidebar">
+<pre>yes</pre>
+</div>
+<div created="20170105204118088" modified="20170105204118088" title="$:/state/tab/sidebar--1835078512">
+<pre>$:/core/ui/SideBar/Recent</pre>
+</div>
+<div list="[[Ván bài lật ngửa]] [[a(n) = 2a(n-1)]] [[Các ô đôi một không cùng hàng, cùng cột]] [[Trò chơi trên tập các tập con]] [[m+1 số chia hết cho nhau]] [[Largest representation]] [[Problem on different subset sums]] [[2 hoặc 21 clique]] [[12 cặp đôi nam nữ quen nhau]] [[Ghép thí sinh và giám khảo]] [[Hàm trên các dãy nhị phân]] [[Số cặp có tổng không âm]] [[Số ít nhất các quả cầu bằng nhau]] [[Bất biến]] [[chia nhóm]] [[2017 chữ số 0 liên tiếp]]" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -8086,125 +8127,260 @@ ImplementationNotes
     }
 }</pre>
 </div>
-<div title="HelloThere">
-<pre>This is a TiddlyWiki plugin for mathematical typesetting based on KaTeX from Khan Academy.
+<div created="20170218171627549" modified="20170319162126884" tags="[[VNTST 2001]] [[tổ hợp]]" title="12 cặp đôi nam nữ quen nhau">
+<pre>''Đề bài:'' Cho $$42$$ người gồm cả nam và nữ. Biết cứ $$31$$ người bất kì thì có một đôi nam nữ. Chứng minh rằng có thể chọn ra $$31$$ đôi nam nữ quen nhau và rời nhau.
 
-It is completely self-contained, and doesn't need an Internet connection in order to work. It works both in the browser and under Node.js.
+''Lời giải:'' Gỉa sử số nam không nhiều hơn số nữ và có $$k$$ nam. Ta thêm vào $$k-12$$ nữ sao cho mỗi nam đều quen với cả $$k - 12$$ nữ này. Ta chứng minh rằng ở tập gồm $$30 + k$$ người mới gồm $$k$$ nam và $$32$$ nữ này, cứ $$r$$ nam thì quen với ít nhất là $$r$$ nữ. Thật vậy, giả sử có $$r$$ nam mà quen với không quá $$r-1$$ nữ. Xét $$r$$ nam này và $$30 - (r - 1)$$ nữ còn lại, nhóm này có $$31$$ người, và những người này đều là người của nhóm ban đầu và không có hai người nào quen nhau. Mâu thuẫn.
 
-! Installation
+Vậy điều kiện của định lý Hall được thỏa mãn. Áp dụng  nó ta có tồn tại $$k$$ cặp nam nữ đôi một quen nhau. Trong số $$k$$ cặp này có nhiều nhất là $$k-12$$ cặp chứa nữ trong $$k-12$$ số nữ thêm vào. Do đó có ít nhất $$k - (k - 12) = 12$$ cặp nam nữ $$\blacksquare$$.   </pre>
+</div>
+<div created="20170218183517461" modified="20170319161453244" tags="[[VNTST 2012]] [[tổ hợp]]" title="2 hoặc 21 clique">
+<pre>''Đề bài:'' Có $$42$$ thí sinh tham gia một kì thi. Biết rằng mỗi thí sinh quen với đúng $$20$$ thí sinh khác. Chứng minh rằng có thể chia các thí sinh thành $$2$$ hoặc $$21$$ nhóm sao cho số thí sinh trong mỗi nhóm là bằng nhau và những thí sinh trong một nhóm thì quen nhau.
 
-To add the plugin to your own TiddlyWiki5, just drag this link to the browser window:
+''Lời giải:'' Xét $$k$$ là số lớn nhất các cạnh rời nhau. Nếu $$k = 21$$ thì ta có đpcm. Giả sử $$k \le 20$$ và xét một cách chọn ra $$k$$ cạnh. Ta tô màu ĐỎ $$k$$ cạnh này. Vì $$k \le 20$$ nên tồn tại hai đỉnh $$a$$ và $$b$$ không thuộc về $$k$$ cạnh đỏ. Dễ thấy là $$a$$ và $$b$$ không kề nhau.
 
-[[$:/plugins/tiddlywiki/katex]]
+Gọi $$N(a)$$ và $$N(b)$$ là tập các đỉnh kề với $$a$$ và $$b$$ tương ứng.
 
-! Using KaTeX
+Nhận xét 1: không có cạnh đỏ nào giữa $$N(a)$$ và $$N(b)$$. Chứng minh tương tự như nhận xét 1 và 2.
 
-The usual way to include ~LaTeX is to use `$$`, as shown in the examples below.
+Gọi $$N(a, b)$$ là tập các đỉnh kề với cả $$a$$ và $$b$$, $$N(a, b) = N(a) \cap N(b)$$.
 
-The underlying KaTeX widget is provided under the name `&lt;$latex&gt;` and is also available under the alias `&lt;$katex&gt;`. It's better to use the generic `&lt;$latex&gt;` name unless you are running multiple ~LaTeX plugins and wish to specifically target KaTeX.
+Nhận xét 2: Không có cạnh đỏ nào giữa các đỉnh thuộc $$N(a, b)$$.
 
-! Examples
+Thật vậy, nếu ngược lại thì tồn tại $$x, y\in R(a, b)$$ để $$xy$$ đỏ. Khi đó ta có thể thay $$xy$$ bởi $$ax$$, và $$yb$$ để thu thuộc $$k+1$$ cặp. vô lý.
 
-These examples are taken from http://khan.github.io/KaTeX/
+Nhận xét 3: không có cạnh đỏ nào giữa $$N(a)-N(a,b)$$ và $$N(a,b)$$. 
 
-!! Example 1
+Thật vậy, nếu ngược lại thì tồn tại $$x \in N(a) - N(a, b)$$ và $$y\in N(a, b)$$ mà $$xy$$ đỏ. Khi đó nếu thay $$xy$$ bởi $$ax$$ và $$yb$$ thì ta có mâu thuẫn.
 
-If the text between `$$` contains newlines it will rendered in display mode:
+Từ nhận xét 3 thì ta có các đỉnh trong $$N(a, b)$$ không kề với bất cứ cạnh đỏ nào.
 
-```
-$$
-f(x) = \int_{-\infty}^\infty\hat f(\xi)\,e^{2 \pi i \xi x}\,d\xi
-$$
-```
+Đặt $$R(a)$$ là tập các đỉnh thuộc $$N(a)$$ mà kề với một cạnh đỏ, $$H(a) = N(a) - N(a, b) - R(a)$$. Tương tự cho $$R(b)$$ và $$H(b)$$.
 
-$$
-f(x) = \int_{-\infty}^\infty\hat f(\xi)\,e^{2 \pi i \xi x}\,d\xi
-$$
+Nhận xét 4: Không có cạnh nào giữa $$R(a)$$ và $$R(b)$$.
 
-!! Example 2
+Thật vậy, theo nhận xét 1 thì không có cạnh đỏ nào giữa $$R(a)$$ và $$R(b)$$. Nếu tồn tại cạnh (không đỏ) $$xy$$ với $$x\in R(a)$$ và $$y\in R(b)$$ thì nếu thay hai cạnh đỏ $$xx'$$ và $$yy'$$ bởi $$ax'$$, $$xy$$ và $$y'b$$ ta có mâu thuẫn.
 
-```
-$$
-\frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} = 1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}} {1+\frac{e^{-8\pi}} {1+\cdots} } } }
-$$
-```
+Nhận xét 5: Không có cạnh nào giữa $$R(a)$$ và $$H(a)$$. Thật vậy, nếu có cạnh (không đỏ) $$xy$$ với $$x\in R(a)$$ và $$y\in H(a)$$ thì thay $$xx'$$ bởi $$ax'$$ và $$xy$$ và có mâu thuẫn.
 
-$$
-\frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} = 1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}} {1+\frac{e^{-8\pi}} {1+\cdots} } } }
-$$
+Từ các nhận xét 4 và 5, ta có không có cạnh nào giữa $$R(a)$$ và $$H(a), R(a, b), R(b), H(b)$$. Do đó các đỉnh trong $$R(a)$$ chỉ kề với các đỉnh trong $$R(a)$$ hoặc $$a$$. Tương tự cho $$R(b)$$. Mà bậc mỗi đỉnh là $$20$$ nên ta có $$|R(a)| \ge 20$$, $$|R(b)| \ge 20$$. Mà $$R(a) \cap R(b) = \emptyset$$ nên $$|R(a)| + |R(b)| \le 40$$. Từ đó phải có $$|R(a)| = |R(b)| = 20$$. Hệ quả là $$|H(a)| = |H(b)| = |R(a,b)| = 0$$ và $$R(a) = N(a)$$, $$R(b) = N(b)$$ và đồ thị ban đầu là hợp của hai $$K_{21}$$ $$\blacksquare$$.</pre>
+</div>
+<div created="20170313125259580" modified="20170319103442754" tags="" title="2017 chữ số 0 liên tiếp">
+<pre>''Đề bài:'' Chứng minh tồn tại số $$n$$ sao cho $$5^{n}$$ có $$2017$$ chữ số $$0$$ liên tiếp.
 
+''Lời giải:'' Trước hết ta phát biểu và chứng minh kết quả sau:
 
-!! Example 3
+''Kết quả 1'': Với mọi số nguyên dương $$k &gt; 0$$, tồn tại số nguyên dương $$t$$ mà $$ 5^{t} - 1$$ chia hết cho $$2^{k}$$.
 
-```
-$$
-1 +  \frac{q^2}{(1-q)}+\frac{q^6}{(1-q)(1-q^2)}+\cdots = \prod_{j=0}^{\infty}\frac{1}{(1-q^{5j+2})(1-q^{5j+3})}, \quad\quad \text{for }\lvert q\rvert&lt;1.
-$$
-```
+''Chứng minh:'' Xét $$2^{k} + 1$$ số $$1, 5, ..., 5^{2^k + 1}$$. Theo nguyên lí Dirichle, tồn tại hai chỉ số $$x &gt; y$$ sao cho $$5^{x}$$ và $$5^{y}$$ có cùng số dư khi chia cho $$2^{k}$$. Do đó $$2^{k} | 5^{x} - 5^{y} = 5^{y}(5^{x-y} - 1)$$. Vì $$(5, 2)$$ = 1 nên với $$t = x - y$$ thì $$2^{k} | 5^{t} - 1$$ $$\square$$
 
-$$
-1 +  \frac{q^2}{(1-q)}+\frac{q^6}{(1-q)(1-q^2)}+\cdots = \prod_{j=0}^{\infty}\frac{1}{(1-q^{5j+2})(1-q^{5j+3})}, \quad\quad \text{for }\lvert q\rvert&lt;1.
-$$
+''Kết quả 2:'' Kí liệu $$l(n)$$ là số chữ số của $$n$$. Khi đó tồn tại $$k$$ sao cho $$k - l(5^{k}) \ge 2017$$.
 
-!! Widget Example
+''Chứng minh:'' Giả sử ngược lại, với mọi số nguyên dương $$k$$ thì $$k - l(5^{k}) \le 2016$$. Khi đó $$l(5^{k}) \ge k - 2016$$. Mà từ định nghĩa của hàm $$l$$ thì $$n \ge 10^{l(n) - 1}$$, nên ta có $$5^{k} \ge 10^{l(5^{k}) - 1}\ge 10^{k-2017}$$. Hay $$10^{2017} \ge 2^{k}$$ với mọi $$k$$. Điều này không thể xảy ra. Kết quả 2 được chứng minh $$\square$$
 
-For more flexibility the KaTeX widget can also be used via the full widget syntax:
+''Trở lại bài toán:'' Từ kết quả $$2$$, chọn $$k$$ thỏa mãn $$k - l(5^{k}) \ge 2017$$, chọn $$t$$ thỏa mãn $$2^{k} | 5^{t} - 1$$. Khi đó $$10^k | 5^k(5^{t} - 1) = 5^{k+t} - 5^{k}$$. Hay $$5^{k+t} = 10^{k}A + 5^{k}$$. Vì $$10^{k}$$ có ít nhất $$k$$ chữ số $$0$$ cuối cùng và $$5^{k}$$ có $$l(5^{k})$$ chữ số nên $$10^{k}A + 5^{k}$$ có ít nhất $$k - l(5^{k}) \ge 2017$$ chữ số $$0$$ liên tiếp $$\blacksquare$$</pre>
+</div>
+<div created="20170306143430820" modified="20170319162045189" tags="[[tổ hợp]]" title="a(n) = 2a(n-1)">
+<pre>''Đề bài:'' Cho $$(a_n)$$ là dãy các số nguyên dương sao cho $$k$$ số hạng đầu tiên $$a_1,...,a_k$$ là các số nguyên dương phân biệt. Với mỗi $$ n &gt; k$$, $$a_n$$ là số nguyên dương nhỏ nhất không thể biểu diễn được như tổng của một vài số (có thể một) số trong $$a_1,...,a_{n-1}$$. Chứng minh rằng với mỗi $$n$$ đủ lơn ta có $$a_n = 2a_{n-1}$$.
 
-```
-&lt;$latex text=&quot;f(x) = \int_{-\infty}^\infty\hat f(\xi)\,e^{2 \pi i \xi x}\,d\xi&quot; displayMode=&quot;true&quot;&gt;&lt;/$latex&gt;
-```
+''Chứng minh:'' Từ định nghĩa của $$a_{n}$$ ta có môi số không vượt quá $$a_{n} - 1$$ là tổng của một số số từ $$a_1,...,a_{n-1}$$. Do đó mọi số không vượt quá $$2a_{n} - 1$$ là tổng của một số số từ $$a_1,...,a_{n}$$. Do đó $$a_{n} \ge 2a_{n-1}$$ với mọi $$n &gt; k$$. Hệ quả là $$a_{n} \ge 2^{n-m}a_{m}$$ với mọi $$n &gt; m &gt; k$$.
 
-&lt;$latex text=&quot;f(x) = \int_{-\infty}^\infty\hat f(\xi)\,e^{2 \pi i \xi x}\,d\xi&quot; displayMode=&quot;true&quot;&gt;&lt;/$latex&gt;
+Bây giờ giả sử $$a_{n} &gt; 2a_{n-1}$$ thì theo cách chọn $$a_n$$ phải có $$2a_{n-1} = \sum\limits_{i \in I}a_i$$ với $$A \subset \{1,...,n-1\}$$. Nếu $$n - 1\in A$$ thì có $$a_{n-1} = \sum\limits_{i\in B}a_i$$ với $$B \subset \{1, 2, ...,n-2\}$$, mâu thuẫn với cách chọn $$a_{n-1}$$. Do đó $$n-1 \notin A$$. Khi đó
 
-! Error Handling
+$$2a_{n-1} = \sum\limits_{i\in A}a_i \le a_1 + a_2 + \cdots + a_{n-2}$$
+$$= a_1 + ... + a_{k} + \frac{a_{n-1}}{2^{n-k-2}} + \frac{a_{n-1}}{2^{n-k-3}} + \cdots + \frac{a_{n-1}}{2}$$
+$$ &lt; a_1 + ... + a_{k}  + a_{n-1}$$
 
-Any LaTeX syntax errors are flagged with the problematic syntax highlighted. For example:
+Hay $$a_{n-1} &lt; a_1 + ... + a_{k}$$. Điều này không xảy ra với $$n$$ đủ lớn.
 
-```
-$$ f(x) = \int_{-\infty}^\infinity\hat f(\xi)\,e^{2 \pi i \xi x}\,d\xi $$
-```
+Vậy với $$n$$ đủ lớn thì ta có $$a_{n} = 2a_{n-1}$$.</pre>
+</div>
+<div created="20170306131551316" modified="20170307153242911" tags="" title="Anti-chain in multiset">
+<pre>''Lời giải'': Đặt $$S_{k}$$ là tập các số dạng $$p_{1}^{t_1}\times\cdots\times p_{n}^{t_n}$$ thỏa mãn $$t_1 + \cdots + t_n = k$$ và $$0\le t_i\le 2$$.
 
-$$ f(x) = \int_{-\infty}^\infinity\hat f(\xi)\,e^{2 \pi i \xi x}\,d\xi $$
+Bổ đề 1: Với $$1\le k\le n-1$$ thì tồn tại đơn ánh $$f_{k}: S_{k} \to S_{k+1}$$ sao cho $$x \, |\, f_{k}(x)$$ với mọi $$x \in S_{k}$$.</pre>
+</div>
+<div created="20170217173033976" modified="20170319161144421" tags="[[tổ hợp]]" title="Bất biến">
+<pre>''Đề bài:'' Trên bảng có $$21$$ số từ $$1$$ đến $$21$$. Mỗi lần được chọn ra hai số $$a &lt; b - 1$$ và thay bởi $$a + 1$$, $$b - 1$$. Hỏi có thể làm được nhiều nhất bao nhiêu bước.
 
+''Chứng minh:'' Dễ thấy mỗi trung bình cộng của các số trên bảng không thay đổi và bằng $$11$$. Đặt $$T = \sum\limits_{x} (x - 11)^2$$. Dễ thấy cứ mỗi lần thay đổi số thì $$T$$ giảm đi $$2$$ đơn vị. Và cũng dễ dàng chứng minh rằng ở trạng thái cuối cùng thì tất cả các số đều bằng nhau và bằng 11. Do đó $$T$$ cuối cùng là $$0$$.
+
+$$T$$ đầu tiên có giá trị là $$\sum\limits_{i=1}^{21}(x-11)^2 = 770$$ nên số bước nhiều nhất là $$770/2 = 335$$.
+
+Để đạt được số bước nhiều nhất thì mỗi lần chọn $$2$$ số $$a &lt; b - 1$$ có hiệu là min và thay đổi chúng.</pre>
+</div>
+<div created="20170225212548808" modified="20170319162031440" tags="[[RRM 2017]]" title="Các ô đôi một không cùng hàng, cùng cột">
+<pre>''Đề bài:'' Trên bảng $$n \times n$$ đặt $$n$$ con xe đen sao cho không có hai con xe nào ăn nhau. Chứng minh rằng có thể đặt được $$2n-2$$ con xe trắng sao cho không có hai con xe trắng nào ăn nhau. Hai con xe trắng ăn nhau khi và chỉ khi chúng cùng hàng hoặc cùng cột và giữa chúng không có con xe đen nào.
+
+''Lời giải:'' Sử dụng định lý Hall.
+
+''Đề bài:'' Như trên, đặt $$n$$ con tốt sao cho không có hai con nào cùng hàng hoặc cùng cột. Hỏi phải đặt bao nhiêu con xe để có thể tấn công tất cả các ô còn lại.
+
+''Đáp số:'' $$n$$ nếu $$n$$ chẵn và $$n-1$$ nếu $$n$$ lẻ.</pre>
+</div>
+<div created="20170319160655238" modified="20170319160945009" tags="[[tổ hợp]]" title="chia nhóm">
+<pre>''Đề bài:'' Có $$100$$ thí sinh mang số báo danh từ $$00$$ đến $$99$$. Hai thí sinh với số báo danh ab và cd được gọi là độc lập nếu $$(a - c)(b  - d) \neq 0$$. Chứng minh rằng có đúng $$2$$ cách chia các thí sinh thành 10 nhóm sao cho hai thí sinh độc với với nhau thì không cùng thuộc về một nhóm.</pre>
+</div>
+<div created="20170309220243101" modified="20170309221720435" tags="" title="Đếm số dãy">
+<pre>''Đề bài'' Có bao nhiêu chuỗi gồm $$n$$ chữ cái biết rằng
+
+1. chỉ gồm các chữ cái A, B, C, D, E
+2. 2 chữ cái liên tiếp khác nhau
+3. Không có 2 nguyên âm nào cạnh nhau
+
+''Lời giải'' Đặt $$a_n$$ và $$b_n$$ lần lượt là số chuỗi độ dài $$n$$ mà bắt đầu bằng nguyên âm và phụ âm tương ứng.
+
+Ta có $$a_1 = 2$$, $$b_1 = 3$$ và công thức truy hồi:
+
+$$a_{n+1} = 2b_{n}$$ và $$b_{n+1} = 3a_{n} + 2b_{n}$$
+
+Đặt $$\alpha_{1, 2} = \frac{1 \pm \sqrt{7}}{3}$$ là hai nghiệm của phương trình $$\alpha = \frac{2\alpha + 2}{3\alpha}$$. Ta có
+
+$$a_{n+1} + \alpha_{i}b_{n+1} = 3\alpha_{i}(a_{n} + \alpha_{i}b_{n}) = \cdots$$
+
+$$ = (3\alpha_{i})^{n-1}(a_1 + \alpha_i b_1) = (3\alpha_{i})^{n-1}(2 + 3\alpha_i)$$
+
+Đặt $$\beta = \frac{1 - \alpha_{1}}{\alpha_{2} - 1}$$ thì $$1 + \beta = \alpha_{1} + \beta \alpha_{2}$$ nên ta có
+
+$$(1 + \beta)(a_{n} + b_{n}) = a_{n} + \alpha_1b_{n} + \beta(a_{n} + \alpha_{2}b_{n})$$
+$$ = (3\alpha_1)^{n-1}(2 + 3\alpha_1) + \beta(3\alpha_2)^{n-1}(2 + 3\alpha_2)$$
+
+Do đó 
+
+$$a_{n} + b_{n} = \frac{(3\alpha_1)^{n-1}(2 + 3\alpha_1) + \beta(3\alpha_2)^{n-1}(2 + 3\alpha_2)}{1 + \beta)}$$
+
+Thay số vào thì số chuỗi độ dài $$n$$ cần tìm là:
+
+$$a_{n} + b_{n} = \frac{(\sqrt{7} - 2)(3 - \sqrt{7})(1-\sqrt{7})^{n-1} + (\sqrt{7} + 2)(3 + \sqrt{7})(1 + \sqrt{7})^{n-1}}{2\sqrt{7}}$$
+
+Với $$n=10$$ thì $$a_{10} + b_{10} = 564000$$
 </pre>
 </div>
-<div title="ImplementationNotes">
-<pre>! CSS Handling
+<div created="20170218071512886" modified="20170319161359654" tags="[[VNTST 2015]] [[tổ hợp]]" title="Ghép thí sinh và giám khảo">
+<pre>''Đề bài:'' Có 100 thí sinh và 25 giám khảo. Biết rằng mỗi thí sinh thích 10 vị giám khảo.
 
-The [[original CSS from KaTeX|https://github.com/Khan/KaTeX/blob/master/static%2Ffonts.css]] includes a number of font definitions in this format:
+1. Chứng minh rằng có thể chọn ra 7 vị giám khảo mà mỗi thí sinh đều thích ít nhất 1 trong 7 vị này.
 
-```
-@font-face {
-    font-family: 'KaTeX_AMS';
-    src: url('fonts/KaTeX_AMS-Regular.eot');
-    src: url('fonts/KaTeX_AMS-Regular.eot?#iefix') format('embedded-opentype'),
-         url('fonts/KaTeX_AMS-Regular.woff') format('woff'),
-         url('fonts/KaTeX_AMS-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-```
+2. Chứng minh rằng có sắp xếp lịch thi sao cho mỗi thí sinh được vị giám khảo mình thích chấm và mỗi vị giám khảo chỉ phải chấm cho không quá 10 thí sinh.
 
-These definitions are currently removed manually from [[$:/plugins/tiddlywiki/katex/katex.min.css]] so that they can be redefined as data URIs using TiddlyWiki's macro notation:
+''Lời giải':'' 
 
-```
-@font-face {
-    font-family: 'KaTeX_AMS';
-    src: url(&lt;&lt;datauri '$:/plugins/tiddlywiki/katex/fonts/KaTeX_AMS-Regular.woff'&gt;&gt;) format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-```
+1. Tồn tại một giám khảo được thích bởi ít nhất $$\frac{10\times 100}{25} = 40$$ thí sinh. Loại bỏ $$40$$ thí sinh này và xét $$60$$ thí sinh còn lại và coi số giám khảo bây giờ là $$24$$. Tương tự ta có $$25$$ thí sinh nữa. Cứ như thế thì ta có $$7$$ giám khảo thỏa mãn.
 
-Note that the plugin currently only embeds the WOFF format fonts, which seems to be sufficient for most browsers.
+2. Ta sắp xếp các thí sinh và giám khảo theo thứ tự. Ghép thí sinh thứ nhất với giám khảo bất kì mà thí sinh ấy thích. Giả sử đã ghép được $$k$$ thí sinh. nếu $$k \ge 100$$ thì xong. Nếu $$k \le 99$$. Xét thí sinh thứ $$k+1$$, một trong 10 vị giám khảo mà thí sinh này thích đã được ghép với không quá $$\left[k/10\right] \le 9$$ thí sinh ta có thể ghép thí sinh $$k+1$$ với vị giám khảo này $$\blacksquare$$.
 </pre>
 </div>
-<div title="KaTeX">
-<pre>~KaTeX is a ~JavaScript library for mathematics typesetting from Khan Academy:
+<div created="20170218070740002" modified="20170319161333623" tags="[[tổ hợp]]" title="Hàm trên các dãy nhị phân">
+<pre>''Đề bài:'' Tìm tất cả $$n$$ sao cho tồn tại hàm $$f: \{0, 1\}^{n} \rightarrow \{1, 2, ..., n\}$$ thỏa mãn với hai dãy bất kì $$x = (x_1,...,x_n)$$ và $$y = (y_1,...,y_n)$$ mà $$\sum\limits_{i=1}^{n} |x_i - y_i| = 2$$ thì $$f(x) \neq f(y)$$.
 
-http://khan.github.io/KaTeX/
+''Chứng minh:'' Dự đoán $$n = 2^{k}$$.</pre>
+</div>
+<div created="20170218235046934" modified="20170319161758039" tags="[[VNTST 2000]] [[tổ hợp]]" title="Largest representation">
+<pre>''Problem:'' Let $$a_{1},...,a_{n}$$ be $$n$$ pairwise coprime positive integers. A positive integer $$k$$ is said to be stubborn if it cannot be written in the form
 
-</pre>
+$$k = \prod\limits_{i=1}^{n}a_{i}\sum\limits_{j=1}^{n}\frac{x_{j}}{a_j}$$ for some positive integers $$x_{j}$$.
+
+Determine the number of stubborn numbers.
+
+''Solution:'' The largest stubborn integer is $$\left(n - 1 - \sum\limits_{i=1}^{n}\frac{1}{a_i}\right)\prod\limits_{i=1}^{n}a_i$$. 
+
+Induction will works.</pre>
+</div>
+<div created="20170217150341478" modified="20170319161925760" tags="" title="m+1 số chia hết cho nhau">
+<pre>''Đề bài:'' Kí hiệu $$S_{n}$$ là tập $$n$$ số nguyên dương đầu tiên. Tìm số nguyên dương $$k$$ nhỏ nhất để với mọi tập con có $$k$$ phần tử của $$S_{2^mn}$$ đều có $$m + 1$$ phần tử $$x_0$$, $$x_1$$, ..., $$x_{m}$$ thỏa mãn $$x_{0} | x_{1} | \cdots | x_{m}$$.
+
+''Chứng minh:'' Giá trị nhỏ nhất của $$k$$ là $$2^{m}n - n + 1$$.
+
+Phần 1: ta sẽ chỉ ra tập $$X$$ có $$2^{m}n - n$$ phần tử là con của $$S_{2^{m}n}$$ mà không có tính chất đề bài.
+
+Thật vậy, chọn $$X = \{n+1, n+2,...,2^{m}n\}$$. Khi đó nếu với mọi $$a &lt; b$$ thuộc $$X$$ thì $$2^{m}a &gt; b$$, nên không tồn tại $$m+1$$ phần tử thỏa mãn hai phần tử bất kì chia hết cho nhau.
+
+Phần 2: Chứng minh với mọi $$2^{m}n - n + 1$$ phần tử bất kì thì tồn tại $$m + 1$$ phần tử có tính chất đề bài.
+
+Với mỗi số nguyên dương lẻ $$1\le a\le n$$, kí hiệu $$X_{a} = \{a, 2a,...,2^{m}a\}$$. Dễ thấy $$X_{a} \subset S_{2^mn}$$ với mọi $$1\le a\le n-1$$ lẻ và $$X_{i} \cap X_{j} = \emptyset$$.
+
+Lực lượng mỗi tập hợp $$X_{a}$$ là $$1 + \left[\log_{2}\left(\frac{2^{m}n}{a}\right)\right] = m + \left[\log_{2}\left(\frac{2n}{a}\right)\right]$$.
+
+Giả sử là không có $$m+1$$ phần tử nào có tính chất ở đề bài thì mỗi tập $$X_{a}$$ phải có ít nhất $$\left[\log_{2}\left(\frac{2n}{a}\right)\right]$$ phần tử được chọn. Tuy nhiên khi đó số phần tử được chọn là
+
+$$T = \sum\limits_{1\le a\le n,\, a = 2l + 1}\left[\log_{2}\left(\frac{2n}{a}\right)\right] = n$$, mâu thuẫn $$\blacksquare$$</pre>
+</div>
+<div created="20170218232535573" modified="20170218233217523" tags="karamata" title="Problem on different subset sums">
+<pre>Given $$A = \{a_{1}, a_{2},...,a_{n}\}$$ such that, for any two subsets $$B$$ and $$C$$ of $$A$$, $$\sum\limits_{x\in A}x \neq \sum\limits_{x\in C} x$$.
+
+Prove that: $$ \sum\limits_{i=1}^{n}\frac{1}{a_i} &lt; 2$$.
+
+Assume $$a_1 &lt; a_2 &lt; \cdots &lt; a_n$$. For each $$k$$, all $$2^{k}$$ subsets of $$\{a_1,...,a_{k}\}$$ have different sums, thus $$\sum\limits_{i=1}^{k} a_{i} \ge 2^{k} - 1$$, for all $$1\le k\le n$$.
+
+The sequence $$a_1,...,a_{n}$$ majorizes the sequence $$1, 2^{1},...,2^{n-1}$$. Therefore, for any non-negative, decreasing, concave function $$f(x)$$ we have $$\sum\limits_{i=1}^{n} f(x) \le \sum\limits_{i=1}^{n}f(2^{i-1})$$. Apply for $$f(x) = \frac{1}{x}$$, we obtain the result $$\blacksquare$$.</pre>
+</div>
+<div created="20170218003955733" modified="20170319161248527" tags="[[tổ hợp]]" title="Số cặp có tổng không âm">
+<pre>''Đề bài:'' Cho số nguyên dương $$n \ge 4$$ và $$n$$ số thực $$a_{1},...,a_{n}$$ thỏa mãn $$a_{1} + ... + a_{n} = 0$$. Chứng minh rằng có ít nhất $$n - 1$$ cặp $$i &lt; j$$ mà $$a_{i} + a_{j} \ge 0$$.
+
+''Chứng minh:'' Quy nạp theo $$n$$.
+
+Với $$n = 4$$. Có ba trường hợp xảy ra:
+
+1. $$a_{3} &lt; 0 \le x_{4}$$. Khi đó dễ thấy 3 cặp $$(1, 4), (2, 4)$$ và $$(3, 4)$$ đều thỏa mãn.
+
+2. $$a_{2} &lt; 0 \le a_{3}$$. Khi đó dễ thấy 2 trong 4 cặp $$(1, 3), (2, 4), (1, 4), (2, 3)$$ thỏa mãn, ngoài ra cặp $$(3, 4)$$ cũng thỏa mãn. OK
+
+3. $$a_{1} &lt; 0 \le a_{2}$$. Khi đó 3 cặp $$(2, 3), (2, 4), (3, 4)$$ thỏa mãn.
+
+Vậy mọi trường hợp ta đều có ít nhất 3 cặp thỏa mãn.
+
+Giả sử đã đúng tới $$n \ge 4$$. Xét với $$n+1$$. Giả sử $$x_{1} \ge x_{2}\ge...\ge x_{k} &gt; 0 \ge x_{k+1} \ge ... \ge x_{n+1}$$.
+
+
+Nếu $$x_{1} + x_{k+1} &lt; 0$$ thì có $$x_{1} + ... + x_{n+1} = x_{1} + ... + x_{k} + x_{k+1} + ... + x_{n+1} \le kx_{1} - (n + 1 - k)x_{1}$$. Do đó $$k\ge (n+1)/2$$. Dễ kiểm tra là có ít nhất $$k(k+1)/2 \ge n$$ cặp $$i, j$$ thỏa mãn.
+
+Nếu $$x_{1} + x_{k+1} \ge 0$$. Xét dãy $$x_{1} + x_{k+1}/n,...,x_{k} + x_{k+1}/n, x_{k+2} + x_{k+1}/n,...,x_{n+1} + x_{k+1}/n$$. Dãy này có tính chất ở đề bài và nếu cặp $$i, j$$ thỏa mãn cho dãy này thì cũng thỏa mãn cho dãy ban đầu. Theo giả thiết quy nạp thì có ít nhất $$n-1$$ cặp, cộng thêm cặp $$1, k+1$$ ta có ít nhất $$n$$ cặp $$\blacksquare$$.</pre>
+</div>
+<div created="20170319083103651" modified="20170319090733631" tags="" title="Số gần hoàn hảo">
+<pre>''Đề bài:'' Số nguyên dương $$n$$ được gọi là số gần hoàn hảo nếu tổng các ước của nó là $$2n-1$$. Tìm tất cả các số gần hoàn hảo mà một lũy thừa nào đó của nó cũng là số gần hoàn hảo.
+
+''Lời giải:'' Gọi $$a_1,...,a_{k}$$ là các ước của số đáng kính $$n$$ và nhỏ hơn $$n$$ thì $$a_1 + \cdots + a_{k} =  n-1$$.
+
+Theo giả thiết thì tồn tại $$t \ge 2$$ sao cho $$n^{t}$$ cũng là số đáng kính. Xét tập $$S$$ gồm các số $$a_{i}n^{j}$$ với $$1\le i\le k$$, $$0\le j\le t-1$$ đều là các ước của $$n^{t}$$ và đôi một khác nhau và nhỏ hơn $$n^{t}$$. Mà ta có tổng các số thuộc $$S$$ là 
+
+$$\sum\limits_{j=0}^{t-1}\sum\limits_{i=1}^{k}a_in^{j} = (n-1)\sum\limits_{j=0}^{t-1}n^{j} = n^{t} - 1$$
+
+Do đó $$S$$ phải là tập tất cả các ước nhỏ hơn $$n^{t}$$ của $$n^{t}$$. Hay mỗi ước của $$n^{t}$$ đều là tích của một ước $$&lt;n$$ của $$n$$ với một lũy thừa của $$n$$.
+
+Từ đây, $$n$$ phải là lũy thừa của một số nguyên tố. Thật vậy giả sử $$n$$ có ít nhất hai ước nguyên tốt thì $$n = ab$$ với $$a &gt; 1$$, $$b &gt; 1$$, $$(a, b) = 1$$, khi đó xét số $$a^{2}$$ là ước của $$n^{t} = a^{t}b^{t}$$. Mà $$a^{2}$$ không là ước của $$n$$ cũng như $$a^{2}$$ không chia hết cho $$n$$. Nên $$a^{2}$$ không thuộc về tập $$S$$, mâu thuẫn.
+
+Với $$n = p^{a}$$, thì dễ dàng tìm được chỉ có $$p=2$$ thỏa mãn $$\blacksquare$$</pre>
+</div>
+<div created="20170217210954769" modified="20170319161224138" tags="" title="Số ít nhất các quả cầu bằng nhau">
+<pre>''Đề bài:'' Cho số nguyên dương $$n$$. Tìm số nguyên dương $$m$$ lớn nhất sao cho: Với $$n$$ túi, mỗi túi đựng một vài quả cầu, mỗi quả có khối lượng là một lũy thừa của $$2$$ (không nhất thiết khác nhau), và tổng khối lượng các quả cầu bằng nhau, thì luôn tồn tại ít nhất $$m$$ quả cầu có cùng khối lượng trong tất cả các quả cầu.
+
+''Kết quả:'' $$ m = \left[\frac{n}{2}\right] + 1$$.</pre>
+</div>
+<div created="20170225093308050" modified="20170319161951758" tags="[[tổ hợp]]" title="Trò chơi trên tập các tập con">
+<pre>''Đề bài:'' Có $$2n$$ tấm thẻ, mỗi tấm ghi một số $$0$$. Hai bạn An và Bình cùng chơi một trò chơi như sau. Ở mỗi lượt An chia $$2n$$ tấm thẻ ra hai phần, mỗi phần gồm $$n$$ tấm thẻ. Bình được phép chọn ra một trong hai phần, công thêm $$1$$ vào các số được trên các tấm được chọn và trừ đi một vào các số ở trên các tấm thẻ còn lại.
+
+Chứng minh rằng Bình có chiến thuật sao cho tại mọi thời điểm thì số viết trên mỗi tấm thẻ đều không vượt quá $${2n-2}\choose{n-1}$$.
+
+''Lời giải:'' Gọi $$P$$ là tập các tập mà được cộng thêm $$1$$ và $$Q$$ là tập các tập mà bi trừ đi $$1$$. Dễ thấy là với mọi $$X$$ thì $$X\in P$$ khi và chỉ khi $$\overline{X} \in Q$$.
+
+Ta coi mỗi tập $$X$$ là một vector. Khi đó ta có $${2n \choose n}$$ vector khác nhau và chúng có thể chia thành $$\frac{1}{2}{2n \choose n}$$ cặp vector bù nhau.
+
+Mỗi lần thì Bình sẽ lựa được một vector $$X$$ và cộng $$1$$ vào hệ số của vector này và trừ $1$ vào hệ số của vector $$\overline{X}$$. Dễ thấy là tại mọi thời điểm thì hệ số của $$X$$ và hệ số của $$\overline{X}$$ có tổng bằng $$0$$.
+
+Ta chứng minh rằng Bình có chiến thuật sao tại mọi thời điểm thì với mỗi $$X$$ thì hệ số của $$X \in \{-1, 0, 1\}$$. Thật vây, giả sử tại thời điểm $$t$$, gọi $$S$$ là tập gồm các vector $$X$$ có hệ số $$1$$. Giả sử $$A$$ và $$B$$ là hai tập được chia bởi An.
+
+Nếu một trong hai tập $$A$$ hoặc $$B = \overline{A}$$ thuộc $$S$$, giả sử là $$A$$, khi đó Bình sẽ chọn tập $$B = \overline{A}$$, sau khi chọn thì có hệ số của $$A$$ và của $$\overline{A}$$ đều là $$0$$. Tính chất trên được giữ nguyên.
+
+Nếu cả hai tập $$A$$ và $$B = \overline{A}$$ đều không thuộc $$S$$, khi đó hệ số của hai vector này đều là $$0$$. Chọn tập không chứa $$1$$. Khi đó thì tập $$S$$ không chứa tập nào chứa $$1$$.
+
+Vậy cách chọn trên của Bình sẽ đảm bảo là hệ số của mỗi vector là $$0$$ hoặc $$1$$ hoặc $$-1$$.
+
+ Bây giờ ta chứng minh khi này mọi số viết trên mọi tấm thể đều không quá $${2n-1 \choose n-2}$$. Thật vậy, với mỗi phần tử $$k$$ thì có đúng $${2n-1 \choose n-2}$$ tập $$n$$ phần tử có chứa $$k$$ và không chứa 1. Và hiển nhiên vì hệ số của mỗi tập này đều không vượt quá $$1$$ nên số viết lên tấm thẻ thứ $$k$$ cũng không vượt quá $${2n-2 \choose n-1}$$ $$\blacksquare$$.</pre>
+</div>
+<div created="20170313143812255" modified="20170313143833258" tags="" title="Ván bài lật ngửa">
+<pre>''Đề bài:'' Một nhà ảo thuật cùng với trợ lý của mình biểu diễn một màn ảo thuật như sau. Họ dùng một bộ bài tây gồm 52 lá bài. Các lá bài đều được lật ngửa. Người trợ lý bịt mắt nhà ảo thuật gia sau đó mời một khán giả chọn 13 lá bài bất kì và công bố cho tất cả mọi người biết (trừ nhà ảo thuật). Người trợ lý sau đó sẽ chọn ra 13 lá trong số lá bài còn lại và đưa cho người khán giả. Người khán giả sẽ trộn tất cả 26 lá bài này theo cách tùy ý rồi đưa cho nhà ảo thuật. Thật ngạc nhiên là nhà ảo thuật nói đúng tất cả 13 lá bài mà người khán giả đã chọn. Hỏi nhà ảo thuật và người trợ lý đã làm thế nào?
+
+''Lời giải:''</pre>
 </div>
 
 </div>

@@ -153,6 +153,10 @@ Error message and password prompt
 
 <li>2017 chữ số 0 liên tiếp</li>
 
+<li>4 số có tích là lũy thừa bậc 4</li>
+
+<li>6 ước số có chung ước nguyên tố</li>
+
 <li>a(n) = 2a(n-1)</li>
 
 <li>Anti-chain in multiset</li>
@@ -165,9 +169,13 @@ Error message and password prompt
 
 <li>Đếm số dãy</li>
 
+<li>Điều kiện một dãy số cấp số cộng</li>
+
 <li>Ghép thí sinh và giám khảo</li>
 
 <li>Hàm trên các dãy nhị phân</li>
+
+<li>k giá trị k-sum khác nhau</li>
 
 <li>Largest representation</li>
 
@@ -177,11 +185,17 @@ Error message and password prompt
 
 <li>Số cặp có tổng không âm</li>
 
+<li>số chính phương ở giữa hai tổng liên tiếp</li>
+
 <li>Số gần hoàn hảo</li>
 
 <li>Số ít nhất các quả cầu bằng nhau</li>
 
+<li>There is a perfect cube between two consecutive sums</li>
+
 <li>Trò chơi trên tập các tập con</li>
+
+<li>ước số nguyên tố chung</li>
 
 <li>Ván bài lật ngửa</li>
 
@@ -8011,7 +8025,7 @@ Error message and password prompt
 <div created="20170105204118088" modified="20170319164437690" title="$:/state/tab/sidebar--1835078512">
 <pre>$:/core/ui/SideBar/Recent</pre>
 </div>
-<div list="" title="$:/StoryList">
+<div list="[[There is a perfect cube between two consecutive sums]] [[số chính phương ở giữa hai tổng liên tiếp]] GettingStarted" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -8190,6 +8204,24 @@ Từ các nhận xét 4 và 5, ta có không có cạnh nào giữa $$R(a)$$ và
 
 ''Trở lại bài toán:'' Từ kết quả $$2$$, chọn $$k$$ thỏa mãn $$k - l(5^{k}) \ge 2017$$, chọn $$t$$ thỏa mãn $$2^{k} | 5^{t} - 1$$. Khi đó $$10^k | 5^k(5^{t} - 1) = 5^{k+t} - 5^{k}$$. Hay $$5^{k+t} = 10^{k}A + 5^{k}$$. Vì $$10^{k}$$ có ít nhất $$k$$ chữ số $$0$$ cuối cùng và $$5^{k}$$ có $$l(5^{k})$$ chữ số nên $$10^{k}A + 5^{k}$$ có ít nhất $$k - l(5^{k}) \ge 2017$$ chữ số $$0$$ liên tiếp $$\blacksquare$$</pre>
 </div>
+<div created="20170320132106228" modified="20170320134854198" tags="" title="4 số có tích là lũy thừa bậc 4">
+<pre>''Đề bài:'' Cho $$N &gt; 3 \times 2^{9}$$ số có tất cả ước số nguyên tố nhỏ hơn hoặc bằng $$23$$. Chứng minh rằng có $$4$$ số có tích là lũy thừa bậc $$4$$ của một số tự nhiên.
+
+''Chứng minh:'' Trước hết ta phát biểu và chứng minh bổ đề sau
+
+''Bổ đề:'' Cứ $$2^9+1$$ số bất kì trong tập trên thì có $$2$$ số có tích là số chính phương.
+
+''Chứng minh:'' Tự chứng minh $$\square$$.
+
+Từ bổ đề trên thì ta có thể chọn ra ít nhất là $$2^{9}+1$$ cặp $$x_i$$, $$y_i$$ mà $$x_iy_i = a_i^2$$. Áp dụng bổ đề lần nữa với các số $$a_i$$ thì tồn tại $$i\neq j$$ mà $$a_ia_j = b^2$$, hay $$x_iy_ix_jy_j = b^4$$ $$\blacksquare$$.</pre>
+</div>
+<div created="20170320233800604" modified="20170320235019338" tags="" title="6 ước số có chung ước nguyên tố">
+<pre>''Đề bài:'' Cho $$S$$ là tập gồm $$6$$ ước số của $$210$$. Biết rằng $$3$$ phần tử bất kì của $$S$$ thì có ước chung lớn nhất lớn hơn $$1$$. Chứng minh rằng tất cả các phần tử của $$S$$ có ước lớn hơn $$1$$
+
+''Lời giải:'' Giả sử các phần tử của $$S$$ có ước chung lớn nhất là $$1$$.
+
+Với mỗi $$p \in \{2, 3, 5, 7\}$$ đặt $$S_{p}$$ là tập gồm các số của $$S$$ không chia hết cho $$p$$. Dĩ nhiên $$S_p \neq \emptyset$$. Với $$x\in S_{2}$$, $$y\in S_{3}$$, $$z\in S_{5}$$ thì có $$(x, y, z)$$ không chia hết cho $$2$$, $$3$$ hay $$5$$ nên bắt buộc $$(x, y, z) = 7$$. Do đó $$x$$ chia hết cho $$7$$ với mọi $$x \notin S_7$$. Tương tự cho các số $$p$$ khác. Như vậy, mõi phần tử thuộc $$S$$ phải chia hết cho ít nhất $$3$$ số nguyên tố khác nhau. Do đó số phần tử nhiều nhất có thể là $${4 \choose 3} + {4\choose 4} = 5$$. Mâu thuẫn. $$\blacksquare$$.</pre>
+</div>
 <div created="20170306143430820" modified="20170319162045189" tags="[[tổ hợp]]" title="a(n) = 2a(n-1)">
 <pre>''Đề bài:'' Cho $$(a_n)$$ là dãy các số nguyên dương sao cho $$k$$ số hạng đầu tiên $$a_1,...,a_k$$ là các số nguyên dương phân biệt. Với mỗi $$ n &gt; k$$, $$a_n$$ là số nguyên dương nhỏ nhất không thể biểu diễn được như tổng của một vài số (có thể một) số trong $$a_1,...,a_{n-1}$$. Chứng minh rằng với mỗi $$n$$ đủ lơn ta có $$a_n = 2a_{n-1}$$.
 
@@ -8228,8 +8260,14 @@ $$T$$ đầu tiên có giá trị là $$\sum\limits_{i=1}^{21}(x-11)^2 = 770$$ n
 
 ''Đáp số:'' $$n$$ nếu $$n$$ chẵn và $$n-1$$ nếu $$n$$ lẻ.</pre>
 </div>
-<div created="20170319160655238" modified="20170319160945009" tags="[[tổ hợp]]" title="chia nhóm">
-<pre>''Đề bài:'' Có $$100$$ thí sinh mang số báo danh từ $$00$$ đến $$99$$. Hai thí sinh với số báo danh ab và cd được gọi là độc lập nếu $$(a - c)(b  - d) \neq 0$$. Chứng minh rằng có đúng $$2$$ cách chia các thí sinh thành 10 nhóm sao cho hai thí sinh độc với với nhau thì không cùng thuộc về một nhóm.</pre>
+<div created="20170319160655238" modified="20170321143005233" tags="[[tổ hợp]]" title="chia nhóm">
+<pre>''Đề bài:'' Có $$100$$ thí sinh mang số báo danh từ $$00$$ đến $$99$$. Hai thí sinh với số báo danh ab và cd được gọi là độc lập nếu $$(a - c)(b  - d) \neq 0$$. Chứng minh rằng có đúng $$2$$ cách chia các thí sinh thành 10 nhóm sao cho hai thí sinh độc với với nhau thì không cùng thuộc về một nhóm.
+
+''Lời giải:'' Ta chứng minh bằng quy nạp theo $$n \ge 2$$.
+
+Với $$n=2$$ thì dễ thấy $$00$$, $$11$$ thuộc hai nhóm khác nhau và $$01$$, $$10$$ thuộc hai nhóm khác nhau. Dễ thấy khẳng định đúng với $$n=2$$.
+
+Giả sử đã đúng tới $$n - 1 \ge 2$$. Xét $$(n-1)^2$$ số $$xy$$ với $$0\le x, y\le n-1$$. Khi đó theo giả thiết</pre>
 </div>
 <div created="20170309220243101" modified="20170309221720435" tags="" title="Đếm số dãy">
 <pre>''Đề bài'' Có bao nhiêu chuỗi gồm $$n$$ chữ cái biết rằng
@@ -8266,6 +8304,17 @@ $$a_{n} + b_{n} = \frac{(\sqrt{7} - 2)(3 - \sqrt{7})(1-\sqrt{7})^{n-1} + (\sqrt{
 Với $$n=10$$ thì $$a_{10} + b_{10} = 564000$$
 </pre>
 </div>
+<div created="20170320155011877" modified="20170320155754652" tags="" title="Điều kiện một dãy số cấp số cộng">
+<pre>''Đề bài:'' Cho số nguyên tố $$p$$ và dãy các số nguyên $$a_1,...,a_{p}$$. Chứng minh rằng dãy số đó là cấp số cộng khi và chỉ khi tồn tại cách phân hoạch tập các số tự nhiên thành $$p$$ tập đôi một rời nhau $$A_1,...,A_{p}$$ sao cho $$a_i + A_i = a_j + A_j$$ với mọi $$1\le i \neq j\le p$$.
+
+''Lời giải:'' Lời giải được chia thành hai phần. Phần thuận và phần đảo.
+
+''Phần thuận:'' $$a_1 &lt; a_2 &lt; ... &lt; a_p$$ là cấp số cộng với công sai $$d$$. 
+
+Đặt $$A_k$$ là tập gồm các số đồng dư với $$i$$ mod $$pd$$ với  $$1 + (k-1)d \le j \le kd$$. Dễ dàng kiểm tra được rằng cách phân hoạch này thỏa mãn.
+
+''Phần đảo:'' Tồn tại phân hoạch $$A_1,...,A_p$$ mà $$a_i + A_i = a_j + A_j$$ với mọi $$i\neq j$$.</pre>
+</div>
 <div created="20170218071512886" modified="20170319161359654" tags="[[VNTST 2015]] [[tổ hợp]]" title="Ghép thí sinh và giám khảo">
 <pre>''Đề bài:'' Có 100 thí sinh và 25 giám khảo. Biết rằng mỗi thí sinh thích 10 vị giám khảo.
 
@@ -8284,6 +8333,19 @@ Với $$n=10$$ thì $$a_{10} + b_{10} = 564000$$
 <pre>''Đề bài:'' Tìm tất cả $$n$$ sao cho tồn tại hàm $$f: \{0, 1\}^{n} \rightarrow \{1, 2, ..., n\}$$ thỏa mãn với hai dãy bất kì $$x = (x_1,...,x_n)$$ và $$y = (y_1,...,y_n)$$ mà $$\sum\limits_{i=1}^{n} |x_i - y_i| = 2$$ thì $$f(x) \neq f(y)$$.
 
 ''Chứng minh:'' Dự đoán $$n = 2^{k}$$.</pre>
+</div>
+<div created="20170320143959247" modified="20170320150342573" tags="" title="k giá trị k-sum khác nhau">
+<pre>''Đề bài:'' Cho số nguyên tố $$p$$ và số nguyên dương $$k\le p$$. Có $$2k-1$$ số nguyên dương đôi một khác nhau sao cho không có $$k$$ số nào đồng dư với nhau theo mod $$p$$. Gọi $$S$$ là tập tất cả các $$k$$-tổng (tổng của $$k$$ phần tử khác nhau) từ $$2k-1$$ số trên.
+
+Chứng minh rằng có ít nhất $$k$$ phần tử của $$S$$ đôi một không đồng dư với nhau.
+
+''Lời giải:'' Ta sẽ chứng minh bằng quy nạp theo $$k$$. Với $$k = 1$$ thì khẳng định của bài toán hiển nhiên đúng.
+
+Giả sử đã đúng tới $$k &lt; p$$. Ta cần chứng minh cho $$k+1$$. Chọn ra hai số dư lặp lại nhiều nhất là $$a$$ và $$b$$. Loại đi mỗi loại một phần tử. Ta còn lại $$2k-1$$ phần tử và mỗi số dư lặp lại không quá $$k$$ lần. Áp dụng giả thiết quy nạp, tồn tại $$2k-1$$ $$k$$-tổng khác nhau theo mod $$p$$ là $$s_1,...,s_{2k-1}$$. Bây giờ xét các $$(k+1)$$-tổng $$a + s_1,...,a + s_{2k-1}$$ và $$b + s_1,...,b + s_{k}$$
+
+Phải có ít nhất một chỉ số $$i$$ sao cho $$b + s_{i} \neq a + s_{j}$$ với mọi $$1\le j\le k$$. Thật vậy nếu không thì ta sẽ có $$ak \equiv bk$$ mod $$p$$ hay $$a \equiv b$$ mod $$p$$. Mâu thuẫn.
+
+Như vậy, có thể chọn ra $$k+1$$ $$(k+1)$$-tổng $$\blacksquare$$.</pre>
 </div>
 <div created="20170218235046934" modified="20170319161758039" tags="[[VNTST 2000]] [[tổ hợp]]" title="Largest representation">
 <pre>''Problem:'' Let $$a_{1},...,a_{n}$$ be $$n$$ pairwise coprime positive integers. A positive integer $$k$$ is said to be stubborn if it cannot be written in the form
@@ -8346,6 +8408,11 @@ Nếu $$x_{1} + x_{k+1} &lt; 0$$ thì có $$x_{1} + ... + x_{n+1} = x_{1} + ... 
 
 Nếu $$x_{1} + x_{k+1} \ge 0$$. Xét dãy $$x_{1} + x_{k+1}/n,...,x_{k} + x_{k+1}/n, x_{k+2} + x_{k+1}/n,...,x_{n+1} + x_{k+1}/n$$. Dãy này có tính chất ở đề bài và nếu cặp $$i, j$$ thỏa mãn cho dãy này thì cũng thỏa mãn cho dãy ban đầu. Theo giả thiết quy nạp thì có ít nhất $$n-1$$ cặp, cộng thêm cặp $$1, k+1$$ ta có ít nhất $$n$$ cặp $$\blacksquare$$.</pre>
 </div>
+<div created="20170321151824524" modified="20170321152018993" tags="" title="số chính phương ở giữa hai tổng liên tiếp">
+<pre>Cho dãy số $$a_{i}$$ thỏa mãn $$a_{1} = 1$$, $$a_{n+1} \ge a_{n} + 2$$. Với mỗi $$n$$, đặt $$S_n = a_1 + a_2 + \cdots + a_n$$.
+
+Chứng minh rằng: với mọi $$n$$ thì tồn tại $$k$$ sao cho $$S_n \le k^2 &lt; S_{n+1}$$</pre>
+</div>
 <div created="20170319083103651" modified="20170319090733631" tags="" title="Số gần hoàn hảo">
 <pre>''Đề bài:'' Số nguyên dương $$n$$ được gọi là số gần hoàn hảo nếu tổng các ước của nó là $$2n-1$$. Tìm tất cả các số gần hoàn hảo mà một lũy thừa nào đó của nó cũng là số gần hoàn hảo.
 
@@ -8365,6 +8432,11 @@ Với $$n = p^{a}$$, thì dễ dàng tìm được chỉ có $$p=2$$ thỏa mãn
 <pre>''Đề bài:'' Cho số nguyên dương $$n$$. Tìm số nguyên dương $$m$$ lớn nhất sao cho: Với $$n$$ túi, mỗi túi đựng một vài quả cầu, mỗi quả có khối lượng là một lũy thừa của $$2$$ (không nhất thiết khác nhau), và tổng khối lượng các quả cầu bằng nhau, thì luôn tồn tại ít nhất $$m$$ quả cầu có cùng khối lượng trong tất cả các quả cầu.
 
 ''Kết quả:'' $$ m = \left[\frac{n}{2}\right] + 1$$.</pre>
+</div>
+<div created="20170321152206954" modified="20170321152457901" tags="[[tổ hợp]]" title="There is a perfect cube between two consecutive sums">
+<pre>''Đề bài:'' Cho dãy số tăng ngặt $$a_n$$ thỏa mãn $$a_1 = 1$$, $$a_{n+1} - a_{n} \ge 3n^2 + 3n + 1 $$ với mọi $$n\ge 1$$. Với mối $$n$$ đặt $$S_n = a_1 + a_ 2 + \cdots + a_n$$.
+
+Chứng minh rằng luôn luôn có một lũy thừa của $$3$$ ở trong khoảng $$[S_{n}, S_{n+1})$$.</pre>
 </div>
 <div created="20170225093308050" modified="20170319161951758" tags="[[tổ hợp]]" title="Trò chơi trên tập các tập con">
 <pre>''Đề bài:'' Có $$2n$$ tấm thẻ, mỗi tấm ghi một số $$0$$. Hai bạn An và Bình cùng chơi một trò chơi như sau. Ở mỗi lượt An chia $$2n$$ tấm thẻ ra hai phần, mỗi phần gồm $$n$$ tấm thẻ. Bình được phép chọn ra một trong hai phần, công thêm $$1$$ vào các số được trên các tấm được chọn và trừ đi một vào các số ở trên các tấm thẻ còn lại.
@@ -8386,6 +8458,23 @@ Nếu cả hai tập $$A$$ và $$B = \overline{A}$$ đều không thuộc $$S$$,
 Vậy cách chọn trên của Bình sẽ đảm bảo là hệ số của mỗi vector là $$0$$ hoặc $$1$$ hoặc $$-1$$.
 
  Bây giờ ta chứng minh khi này mọi số viết trên mọi tấm thể đều không quá $${2n-1 \choose n-2}$$. Thật vậy, với mỗi phần tử $$k$$ thì có đúng $${2n-1 \choose n-2}$$ tập $$n$$ phần tử có chứa $$k$$ và không chứa 1. Và hiển nhiên vì hệ số của mỗi tập này đều không vượt quá $$1$$ nên số viết lên tấm thẻ thứ $$k$$ cũng không vượt quá $${2n-2 \choose n-1}$$ $$\blacksquare$$.</pre>
+</div>
+<div created="20170320153621161" modified="20170320232556921" tags="" title="ước số nguyên tố chung">
+<pre>''Đề bài:'' Cho $$n$$ là số nguyên dương và $$n$$ số nguyên tố khác nhau $$p_1,...,p_n$$. Gọi $$S$$ gồm $$2^{n-1}$$ phần tử là tập các ước của $$M = p_1\times p_2 \times \cdots \times p_n$$. Biết rằng cứ $$3$$ phần tử $$a$$, $$b$$, $$c$$ của $$S$$ thì $$\text{gcd}(a, b, c) &gt; 1$$.
+
+Chứng minh rằng:
+
+1. Tồn tại chỉ số $$i$$ sao cho $$p_i | x$$ với mọi $$x \in S$$.
+
+2. Tồn tại tập $$S$$ gồm $$5\times 2^{n-4}$$ phần tử thỏa mãn điều kiện trên mà các phần tử của $$S$$ có ước chung lớn nhất là $$1$$.
+
+''Lời giải:''
+
+1. Dễ thấy với mọi $$x\in S$$ thì $$M/x \notin S$$. Mà tập $$S$$ gồm đúng $$2^{n-1}$$ phần tử nên cứ mỗi cặp $$x, M/x$$ thì có đúng một số thuộc $$S$$.
+
+Xét hai phần tử $$x \neq y$$ thuộc $$S$$. Vì có $$M/\text{gcd(x, y)}$$ không thuộc $$S$$ nên $$\text{gcd}(x, y)$$ thuộc $$S$$. Từ đó ta có $$\text{gcd}(x_1,...,x_k) \in S$$ với mọi $$x_1,...,x_k \in S$$. Hệ quả là ước chung lớn nhất của tất cả các phần tử của $$S$$ cũng thuộc $$S$$. Mà có $$1$$ không thuộc $$S$$ nên ước chung lớn nhất của các phần tử của $$S$$ lớn hơn $$1$$. Hay tồn tại $$i$$ mà $$p_i | x$$ với mọi $$x\in S$$ $$\square$$.
+
+2. Chọn $$S$$ là tập các gồm các số có dạng $$a\times b$$ với $$a$$ là ước có ít nhất 3 số nguyên tố của $$p_1,p_2,p_3, p_4$$ và $$b$$ là ước của $$p_5...p_n$$. Dễ thấy $$S$$ thỏa mãn bài toán và $$|S| = 5\times 2^{n-4}$$.</pre>
 </div>
 <div created="20170313143812255" modified="20170313143833258" tags="" title="Ván bài lật ngửa">
 <pre>''Đề bài:'' Một nhà ảo thuật cùng với trợ lý của mình biểu diễn một màn ảo thuật như sau. Họ dùng một bộ bài tây gồm 52 lá bài. Các lá bài đều được lật ngửa. Người trợ lý bịt mắt nhà ảo thuật gia sau đó mời một khán giả chọn 13 lá bài bất kì và công bố cho tất cả mọi người biết (trừ nhà ảo thuật). Người trợ lý sau đó sẽ chọn ra 13 lá trong số lá bài còn lại và đưa cho người khán giả. Người khán giả sẽ trộn tất cả 26 lá bài này theo cách tùy ý rồi đưa cho nhà ảo thuật. Thật ngạc nhiên là nhà ảo thuật nói đúng tất cả 13 lá bài mà người khán giả đã chọn. Hỏi nhà ảo thuật và người trợ lý đã làm thế nào?

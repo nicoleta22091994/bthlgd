@@ -181,6 +181,12 @@ Error message and password prompt
 
 <li>m+1 số chia hết cho nhau</li>
 
+<li>New Tiddler</li>
+
+<li>Nghiệm chung</li>
+
+<li>Nội suy Lagrange</li>
+
 <li>Problem on different subset sums</li>
 
 <li>Số cặp có tổng không âm</li>
@@ -8025,7 +8031,7 @@ Error message and password prompt
 <div created="20170105204118088" modified="20170319164437690" title="$:/state/tab/sidebar--1835078512">
 <pre>$:/core/ui/SideBar/Recent</pre>
 </div>
-<div list="[[There is a perfect cube between two consecutive sums]] [[số chính phương ở giữa hai tổng liên tiếp]] GettingStarted" title="$:/StoryList">
+<div list="[[New Tiddler]] GettingStarted" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -8376,6 +8382,55 @@ Lực lượng mỗi tập hợp $$X_{a}$$ là $$1 + \left[\log_{2}\left(\frac{2
 Giả sử là không có $$m+1$$ phần tử nào có tính chất ở đề bài thì mỗi tập $$X_{a}$$ phải có ít nhất $$\left[\log_{2}\left(\frac{2n}{a}\right)\right]$$ phần tử được chọn. Tuy nhiên khi đó số phần tử được chọn là
 
 $$T = \sum\limits_{1\le a\le n,\, a = 2l + 1}\left[\log_{2}\left(\frac{2n}{a}\right)\right] = n$$, mâu thuẫn $$\blacksquare$$</pre>
+</div>
+<div created="20170324133710189" modified="20170324134300989" tags="" title="New Tiddler">
+<pre>Lấy $$E'$$ đối xứng với $$E$$ qua $$A$$.. Có $$\angle E'BE = 2\angle ABE = \angle CBE$$ nên $$BE$$ là phân giác của tam giác $$E'BC$$. Do đó $$\frac{BE'}{BC} = \frac{E'E}{EC}$$.
+
+Mà  $$\frac{E'B}{BC} = \frac{BE}{ED}$$ nên có $$\frac{E'E}{EC} = \frac{BE}{ED}$$. Hệ quả là $$BE' ||CD$$. Nên $$\frac{BE'}{DC} = \frac{BE}{EC} = \frac{BE'}{BC}$$. Hay $$DC = BC$$ $$\blacksquare$$.</pre>
+</div>
+<div created="20170321194244059" modified="20170321195042561" tags="" title="Nghiệm chung">
+<pre>''Đề bài:'' Cho ba số thực đôi một khác nhau và khác $$0$$ là $$a$$, $$b$$, $$c$$. Biết ba đa thức $$ax^3 + bx + c$$, $$bx^3 + cx + a$$ và $$cx^3 + ax + b$$ có nghiệm thực chung.
+
+Chứng minh rằng ít nhất một trong ba đa thức đó có $$3$$ nghiệm thực.
+
+''Lời giải:'' Gọi $$t$$ là nghiệm chung, ta có
+
+$$b(at^3 + bt + c) = 0 = a(bt^3 + ct + a)$$
+
+$$(b^2 - ac)t = (a^2 - bc)$$
+
+Tương tự ta có hai đẳng thức tương tự. Cộng lại vế theo vế ta có
+
+$$(a^2 + b^2 + c^2 - ab - bc - ca)t = (a^2 + b^2 + c^2 - ab - bc - ca)$$.
+
+Mà $$a$$, $$b$$, $$c$$ phân biệt nên $$a^2 + b^2 + c^2 - ab - bc - ca \neq 0$$. Do đó $$t$$ phải bằng $$1$$. Hệ quả là $$a + b + c = 0$$.
+
+Có $$ax^3 + bx + c = ax^3 - ax - cx + c = (ax^2 + ax - c)(x-1)$$.
+
+Đa thức $$ax^2 + ax - c$$ có $$\Delta = a^2 + 4ac$$.
+
+Tương tự cho hai đa thức còn lại có $$\Delta$$ tương ứng là $$b^2 + 4ba$$, $$c^2 + 4cb$$. Trong ba số $$a$$, $$b$$, $$c$$ thì có ít nhất hai số cùng dấu ví dụ $$a$$ và $$c$$. Khi đó $$a^2 + 4ac &gt; 0$$ và tam thức bậc hai tương ứng có hai nghiệm thực và đa thức tương ứng có ba nghiệm thực $$\blacksquare$$.</pre>
+</div>
+<div created="20170321154421336" modified="20170321201958738" tags="" title="Nội suy Lagrange">
+<pre>Từ công thức Lagrange ta có
+
+$$P(x) = \sum\limits_{i=0}^{2015}P(i)\prod\limits_{j=0, j\neq i}^{2015}\frac{x - j}{i - j}$$.
+
+Nên $$P(2016) = \sum\limits_{i=0}^{2015}3^i\prod\limits_{j=0, j\neq i}^{2015}\frac{2016 - j}{i - j}$$
+
+Có với mỗi $$i$$ thì
+
+$$\prod\limits_{j=0, j\neq i}^{2015}\frac{2016 - j}{i - j} = (-1)^{2015 - i}\frac{\frac{2016!}{2016 - i}}{i!(2015-i)!}$$
+
+$$= (-1)^{2015-i}\frac{2016!}{i!(2016-i)!} = (-1)^{2015-i}{2016\choose i}$$
+
+Nên 
+
+$$P(2016) = \sum\limits_{i=0}^{2015}3^{i}(-1)^{2015-i}{2016 \choose i}$$
+
+$$ = 3^{2016} - \sum\limits_{i=0}^{2016}3^{i}(-1)^{2016-i}{2016 \choose i}$$
+
+$$ = 3^{2016} - 2^{2016}$$</pre>
 </div>
 <div created="20170218232535573" modified="20170218233217523" tags="karamata" title="Problem on different subset sums">
 <pre>Given $$A = \{a_{1}, a_{2},...,a_{n}\}$$ such that, for any two subsets $$B$$ and $$C$$ of $$A$$, $$\sum\limits_{x\in A}x \neq \sum\limits_{x\in C} x$$.
